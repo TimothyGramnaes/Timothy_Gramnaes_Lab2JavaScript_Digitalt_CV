@@ -42,9 +42,7 @@ header {
     background-color: #202020;
     color: white;
 
-
-
-    height: 2.5rem;
+    height: 3rem;
     width: 100%;
     padding-top: .5rem;
     justify-content: baseline;
@@ -59,7 +57,10 @@ header {
     box-sizing: border-box;
     color: white;
     transition: 0.3s ease-in-out; 
+}
 
+.fas {
+    font-size: 1.6rem;
 }
 
 main {
@@ -84,6 +85,18 @@ a {
 
 .right-nav {
     right: 0;
+}
+
+.dice {
+    height: 1.8rem;
+    border-radius: 10px;
+    overflow: hidden;
+
+
+}
+
+.dice img {
+    height: 100%;
 }
 
 /** HERO **/
@@ -142,3 +155,4 @@ a {
     font-size: 1.2rem;
     text-transform: uppercase;
 }
+
