@@ -1,0 +1,22 @@
+@media (max-width: 40em) {
+
+
+    .hero-image {    
+    background-position: center;
+    }
+  
+
+    .mid-nav {
+    display: none;
+    }
+
+    .dice {
+    height: 2.5rem;
+    right: 0;
+    }
+
+    .hiddenDesktop {
+    display: block;
+    }
+
+}

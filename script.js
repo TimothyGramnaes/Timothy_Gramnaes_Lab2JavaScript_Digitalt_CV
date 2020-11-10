@@ -1,11 +1,18 @@
+window.addEventListener('load', startPage);
+
+function startPage() {
+    console.log('So you are reading the log, huh?');
+    activateHamburger();
+
+}
+
+
 /**
  * Dice roll on header
  */
-
 function rollDice() {
-    var die = document.getElementById("die");
-
-    var d1 = Math.floor(Math.random() * 6) +1;
+    const die = document.getElementById("die");
+    let d1 = Math.floor(Math.random() * 6) +1;
         if (d1 == 1) {
             die.innerHTML = '<img src="imgs/dice/1.png" alt="" srcset="">';
         }
@@ -22,7 +29,26 @@ function rollDice() {
             die.innerHTML = '<img src="imgs/dice/5.png" alt="" srcset="">';
         }
         if (d1 == 6) {
-            die.innerHTML = '<img src="imgs/dice/1.png" alt="" srcset="">';
+            die.innerHTML = '<img src="imgs/dice/6.png" alt="" srcset="">';
         }
+
+}
+
+/**
+ * Hamburger-menu
+ */
+function activateHamburger() {
+    const ham = document.querySelector("#hamButton");
+    ham.addEventListener('click', toggleHamburger);
+
+}
+
+function toggleHamburger() {
+
+    const navbar = document.querySelector(".navbar");
+
+    navbar.classList.toggle("showNav");
+    navbar.classList.toggle("closeNav");
+    console.log('kjasföa');
 
 }
