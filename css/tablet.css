@@ -1,9 +1,12 @@
-@media (max-width: 55em) {
+@media (max-width: 51em) {
 
     .nav-item {
-        font-size: 0.8rem;
+        font-size: 0.67rem;
     }
 
+    .mid-nav {
+        flex-direction: column;
+    }
 
 
 }
