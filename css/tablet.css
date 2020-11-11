@@ -1,7 +1,8 @@
-@media (max-width: 51em) {
+@media (max-width: 52em) {
 
     .nav-item {
-        font-size: 0.67rem;
+        font-size: 0.82rem;
+        padding: 1rem .4rem 1rem .4rem;
     }
 
     .mid-nav {

@@ -1,8 +1,12 @@
 @media (max-width: 40em) {
 
+    .nav-container {
+        padding: 1rem;
+    }
 
-    .hero-image {    
-    background-position: center;
+
+    .page-image {    
+    object-position: center;
     }
   
 

@@ -21,6 +21,7 @@
 .bg-white { background-color: white; }
 .bg-black { background-color: black; }
 .hiddenDesktop { display: none; }
+.helvetica { font-family: Arial, Helvetica, sans-serif; }
 
 /*#endregion Reusable Classes */
 html { height: 100%; }
@@ -28,6 +29,15 @@ html { height: 100%; }
 @font-face {
     font-family: type-writer;
     src: url(/fonts/SpecialElite.ttf)
+}
+
+
+a:hover {
+
+    transition: all 200ms;
+    color: grey;
+    font-size: 1.01rem;
+    padding: 0;
 }
 
 body {
@@ -42,7 +52,7 @@ body {
 
 /*#region Header */
 header {
-    background-color: #202020;
+
     color: white;
 
     height: 3rem;
@@ -55,12 +65,14 @@ header {
     align-items: center;
     z-index: 2000;
     width: 100%;
+  
     
+    background-color: #202020;
     padding: 1rem;
     box-sizing: border-box;
-    color: white;
+    
 
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px white; 
     transition: 0.3s ease-in-out; 
 }
 
@@ -68,11 +80,12 @@ header {
     display: block;
 }
 
-.fas {
+.fa-bars {
     font-size: 2.5rem;
     position: absolute;
     z-index: 1;
     top: 1rem;
+    left: 1.3rem;
 }
 
 main {
@@ -81,9 +94,6 @@ main {
     width: 100%;
 }
 
-/* a {
-    text-decoration: none;
-} */
 
 .nav-item {
     color: white;
@@ -95,12 +105,19 @@ main {
     text-decoration: none;
 }
 
+.nav-button:hover {
+    
+    transform: scale(1.15);
+    transition: all 200ms;
+
+}
+
 .right-nav {
     right: 0;
 }
 
 .dice {
-    height: 1.8rem;
+    height: 2.5rem;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -168,9 +185,9 @@ main {
 
 /*#endregion Header */
 
-/************ HERO **********/
-.hero-image {
-    background-image: url(/imgs/on-stage.jpg);
+/************ Main **********/
+.main-area {
+   /* background-image: url(/imgs/on-stage.jpg); */
     position: fixed;
     height: 100%;
     width: 100%;
@@ -179,9 +196,23 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
 
+    color: white;
+
 }
 
-.hero-image:after {
+
+
+/*#region Hero */
+.page-image {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    object-position: left;
+    object-fit: cover;
+}
+
+.main-area:after {
     content: "";
     display: block;
     position: absolute;
@@ -223,6 +254,48 @@ main {
     width: 100%;
     margin: 1rem 0;
 }
+
+
+
+
+/*#endregion hero */
+
+/*#region contact page */
+
+.contact-page {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-image {
+    position: absolute;
+
+    bottom: 5rem;
+    border-radius: 50%;
+    border: solid 2px white;
+    height: 13rem;
+    width: 13rem;
+    object-fit: cover;
+
+    z-index: 200;
+
+}
+
+.page-image-contact {
+    position: fixed;
+    height: auto;
+    width: 100%;
+
+    object-position: left;
+    object-fit: cover;
+}
+
+.contact-information {
+    z-index: 200;
+}
+
+/*#endregion contact page */
 
 /*#region Footer */
 
