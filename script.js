@@ -16,7 +16,7 @@ function rollDice() {
     const die = document.getElementById("die");
     let d1 = Math.floor(Math.random() * 6) +1;
     if (d1 == 1) {
-        die.innerHTML = '<img src="./imgs/dice/1.png" alt="" srcset="">';
+            die.innerHTML = '<img src="./imgs/dice/1.png" alt="" srcset="">';
         //image.src = './imgs/dice/1.png';
         }
         if (d1 == 2) {
