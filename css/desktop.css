@@ -274,12 +274,17 @@ main {
     bottom: 5rem;
     border-radius: 50%;
     border: solid 2px white;
-    height: 13rem;
-    width: 13rem;
+    height: 15rem;
+    width: 15rem;
     object-fit: cover;
 
     z-index: 200;
 
+}
+
+.contact-info {
+    font-size: 1.3rem;
+    
 }
 
 .page-image-contact {
@@ -296,6 +301,19 @@ main {
 }
 
 /*#endregion contact page */
+
+/*#region painting page */
+
+.painting-textbox {
+    z-index: 1500;
+
+    top: 3rem;
+    justify-content: flex-start;
+}
+
+
+/*#endregion painting page */
+
 
 /*#region Footer */
 
