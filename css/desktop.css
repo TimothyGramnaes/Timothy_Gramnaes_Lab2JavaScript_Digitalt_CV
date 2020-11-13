@@ -187,7 +187,7 @@ main {
 
 /************ Main **********/
 .main-area {
-   /* background-image: url(/imgs/on-stage.jpg); */
+
     position: fixed;
     height: 100%;
     width: 100%;
@@ -304,11 +304,71 @@ main {
 
 /*#region painting page */
 
+.painting-area {
+
+ 
+     height: 100%;
+     width: 100%;
+ 
+     background-position: left;
+     background-size: cover;
+     background-repeat: no-repeat;
+ 
+     color: white;
+
+     justify-content: center;
+ 
+}
+
+.painting-area:after {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 20rem 20rem 25rem -5rem #202020, inset 0rem 0rem 0rem 0rem #202020; 
+
+    top: 0;
+    z-index: 100;
+}
+
+
+
+.painting-page {
+    z-index: 1500;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 .painting-textbox {
     z-index: 1500;
 
-    top: 3rem;
+    margin-top: 5rem;
+    margin: 7rem 0rem 0 3rem;
     justify-content: flex-start;
+}
+
+.painting-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+.painting-displayer {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.paintings {
+    height: auto;
+    width: 70vw;
+    
+
+    border: solid 2px white;
+    margin: 1rem 0 0 0;
 }
 
 
@@ -326,7 +386,7 @@ footer {
     padding: .5rem 0rem .5rem 0rem;
 
     bottom: 0;
-    z-index: 300;
+    z-index: 2000;
     position: fixed;
     border-top: solid 1px white;
 
