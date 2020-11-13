@@ -266,10 +266,11 @@ main {
     position: absolute;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .contact-image {
-    position: absolute;
+
 
     bottom: 5rem;
     border-radius: 50%;
@@ -346,8 +347,9 @@ main {
     z-index: 1500;
 
     margin-top: 5rem;
-    margin: 7rem 0rem 0 3rem;
+    margin: 7rem 1rem 0 2rem;
     justify-content: flex-start;
+    
 }
 
 .painting-text {
