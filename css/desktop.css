@@ -375,6 +375,17 @@ main {
 /*#endregion painting page */
 
 
+/*#region web design */
+
+.play-game {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/*#endregion web design */
+
+
 /*#region Footer */
 
 footer {
@@ -417,4 +428,15 @@ footer {
 .footer-icons i {
     margin: 0rem 1rem 0rem 1rem;
 }
+
+.social-links {
+    text-decoration: none;
+    color: white;
+}
+
+.social-links:hover {
+    transform: scale(1.15);
+    transition: all 200ms;
+}
+
 /*#endregion Footer */
