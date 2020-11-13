@@ -1,5 +1,8 @@
 window.addEventListener('load', startPage);
 
+/**
+ * Page starter on load
+ */
 function startPage() {
     console.log('So you are reading the log, huh?');
     activateHamburger();
