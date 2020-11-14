@@ -365,8 +365,8 @@ main {
 }
 
 .paintings {
-    height: auto;
-    width: 80vw;
+    height: 80vh;
+    width: auto;
     
 
     border: solid 2px white;
